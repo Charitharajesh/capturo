@@ -1,0 +1,23 @@
+{
+  "overview": "Capturo is an on-demand event content delivery platform where users can book nearby photographers and videographers during events like concerts, weddings, and festivals, and receive their media instantly.",
+  "features": [
+    "Cosmic Berry dark theme with gradient design",
+    "Homepage with hero section and feature cards",
+    "Login and Register pages with role selection (User/Creator)",
+    "Booking page with event form and submission",
+    "Fully responsive mobile-friendly layout",
+    "Glowing gradient buttons with hover effects",
+    "TanStack Router navigation between pages"
+  ],
+  "category": "marketplace",
+  "tags": [
+    "event",
+    "booking",
+    "content-creation",
+    "photos",
+    "videos",
+    "startup",
+    "dark-theme"
+  ],
+  "last_updated": "2026-04-10T10:11:52.720Z"
+}

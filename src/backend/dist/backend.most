@@ -1,0 +1,22 @@
+// Version: 1.0.0
+type BookingId__892708521 = Nat;
+type Booking__628731632 =
+  {
+    budget : Nat;
+    createdAt : Int;
+    eventDate : Text;
+    eventName : Text;
+    id : BookingId__892708521;
+    location : Text
+  };
+type Nat__490723111 = Nat__920180692;
+type Nat__920180692 = Nat;
+actor {
+  stable bookings :
+    {
+      var blockIndex : Nat__490723111;
+      var blocks : [var [var ?Booking__628731632]];
+      var elementIndex : Nat__490723111
+    };
+  stable var nextBookingId : Nat
+};

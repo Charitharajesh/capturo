@@ -1,0 +1,27 @@
+type BookingResult = 
+ variant {
+   err: text;
+   ok: BookingId;
+ };
+type BookingInput = 
+ record {
+   budget: nat;
+   eventDate: text;
+   eventName: text;
+   location: text;
+ };
+type BookingId = nat;
+type Booking = 
+ record {
+   budget: nat;
+   createdAt: int;
+   eventDate: text;
+   eventName: text;
+   id: BookingId;
+   location: text;
+ };
+service : {
+  getBookingById: (id: BookingId) -> (opt Booking) query;
+  getBookings: () -> (vec Booking) query;
+  submitBooking: (input: BookingInput) -> (BookingResult);
+}
